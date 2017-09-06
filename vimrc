@@ -9,7 +9,6 @@ else
 	call vundle#begin()
 endif
 
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -26,7 +25,14 @@ filetype plugin indent on
 
 
 set autoindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+
 set number
+
+
 set nobackup
 set noswapfile
 
