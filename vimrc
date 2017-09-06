@@ -30,6 +30,10 @@ set shiftwidth=2
 set expandtab
 
 
+set noshowmode                  "hide show mode down the bottom
+set gcr=a:blinkon0              "Disable cursor blink
+set autoread                    "Reload files changed outside vim
+set t_vb=                       "no visual bell
 set number
 
 
