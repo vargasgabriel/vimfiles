@@ -37,6 +37,12 @@ set t_vb=                       "no visual bell
 set number
 
 
+" Search
+set incsearch
+set hlsearch
+set ignorecase
+
+
 set nobackup
 set noswapfile
 
