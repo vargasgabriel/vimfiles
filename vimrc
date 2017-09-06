@@ -13,21 +13,48 @@ endif
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" apparence
 Plugin 'dracula/vim'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 filetype plugin indent on
 
 
+" -------------------------------
 " settings
+" -------------------------------
+
+
 set autoindent
 set number
 set nobackup
 set noswapfile
 
+
+set laststatus=2
+
+" -------------------------------
 " apparence
-set guifont=Hack:h10
-set cursorline
+" -------------------------------
+
+set guifont=Hack:h12
+
+if has("gui_running")
+  set t_Co=256
+
+  set cursorline
+  hi CursorLine guibg=#222222
+
+endif
+
 syntax on
 colorscheme dracula
+
+" -------------------------------
+"  Plugins configs
+" -------------------------------
+
+" Lightline
+let g:lightline= {
+  \ 'colorscheme': 'Dracula',
+  \ }
