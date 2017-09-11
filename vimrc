@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -70,6 +71,9 @@ colorscheme dracula
 " -------------------------------
 "  Plugins configs
 " -------------------------------
+
+" NERDTree
+map <C-\> :NERDTreeToggle<CR>
 
 " Lightline
 let g:lightline= {
